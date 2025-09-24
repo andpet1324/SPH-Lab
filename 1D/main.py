@@ -29,6 +29,9 @@ class StateVector:
         # Call equations: internal force calc, then artificial viscous, and external force
         
         new_SV = RK45(SV)
+        # Unflatten!
+
+        new_SV = np.array([new_SV[:400], new_SV[400:800], new_SV[800:1200], new_SV[1200:1600], new_SV[1600:2000]])
 
         self.SV = new_SV
         self.X = new_SV[0]
@@ -37,12 +40,13 @@ class StateVector:
         self.P = new_SV[3]
         self.E = new_SV[4]
 
+        new_SV = np.array
+
         return 1
 
 def plot(state):
     plt.plot(state.X, state.R, label='Density')
     plt.plot(state.X, state.E, label='Energy')
-    plt.plot(state.X, state.P, label='Pressure')
     plt.legend()
     plt.show()
 
@@ -54,12 +58,5 @@ if __name__ == "__main__":
 
     SV = state.SV
 
-    #plt.scatter(state.X, W_rate[100])
-    #plt.show()
-
-    #plt.plot(state.X, density_field)
-    #plt.show()
-    
     state.updateState(SV)
 
-    plot(state)
