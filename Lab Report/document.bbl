@@ -1,0 +1,46 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Hobbs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cf268d9c6161610264348bfcdde8e58d}{%
+           family={Hobbs},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf268d9c6161610264348bfcdde8e58d}
+      \strng{fullhash}{cf268d9c6161610264348bfcdde8e58d}
+      \strng{bibnamehash}{cf268d9c6161610264348bfcdde8e58d}
+      \strng{authorbibnamehash}{cf268d9c6161610264348bfcdde8e58d}
+      \strng{authornamehash}{cf268d9c6161610264348bfcdde8e58d}
+      \strng{authorfullhash}{cf268d9c6161610264348bfcdde8e58d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Given for FYSN33 - Computational Physics. Undated}
+      \field{title}{SPH Labs - Lab Manual}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
